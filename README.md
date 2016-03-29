@@ -8,7 +8,8 @@ Spawn child processes that survive restarts and exit when the app exits.
 var childProcess = new sanjo.LongRunningChildProcess('myChild');
 var spawnOptions = {
   command: <COMMAND>,
-  args: []
+  args: [],
+  pid: <PARENT_PID> //optional
 };
 childProcess.spawn(spawnOptions);
 ```
